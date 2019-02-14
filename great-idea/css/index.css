@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+
+header nav {
+  display: inline-flex;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav a {
+  display: inline-flex;
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  display: inline-flex;
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta .cta-text {
+
+  flex-direction: column;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+  display: inline-flex;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+  display: inline-flex;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/*css for services page starts here */
+.services{
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+  }
+
+.services-header-img {
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+.above-break .service h1{
+  font-size: 30px;
+}
+
+.above-break .service p {
+  font-size: 20px;
+}
+
+.services .holder .item1, .item2,.item3,.item4,.item5,.item6 {
+
+
+  height: 250px;
+  width:  400px;
+  border: solid;
+  border-width: thin;
+  background-color:#eaedf2;
+  padding: 17px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  font-size: 20px;
+
+}
+.item1, .item3, .item5 {
+  float: left;
+
+}
+.item2, .item4, .item6 {
+  float: right;
+  right: 100px;
+
+}
+
+.services .holder  .box {
+  height: 45px;
+  width: 150px;
+  margin-top: 5px;
+  padding: 10px;
+  border: solid;
+  border-width: thin;
+  text-align: center;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.end {
+  clear: both;
+}
+.facts{
+  height: 45px;
+  width: 400px;
+  padding: 25px;
+  margin-right: 50px;
+  float: left;
+}
+.service-info-img {
+  float: right;
+
+}
+li {
+  list-style-type: circle;
+  padding: 5px;
+}
