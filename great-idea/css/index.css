@@ -280,31 +280,27 @@ footer {
   font-size: 20px;
 }
 
-.services .holder .item1, .item2,.item3,.item4,.item5,.item6 {
-
+.services .holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.services .holder .item {
 
   height: 250px;
   width:  400px;
   border: solid;
   border-width: thin;
   background-color:#eaedf2;
-  padding: 17px;
-  margin-bottom: 20px;
-  margin-top:20px;
+  padding: 19px;
+  margin: 25px;
+  margin-left: 0px;
   font-size: 20px;
 
 }
-.item1, .item3, .item5 {
-  float: left;
 
-}
-.item2, .item4, .item6 {
-  float: right;
-  right: 100px;
-
-}
-
-.services .holder  .box {
+.services .holder .box {
   height: 45px;
   width: 150px;
   margin-top: 5px;
